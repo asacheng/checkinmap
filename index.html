@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=480, user-scalable = no, target-densitydpi=device-dpi">
+        <style>
+            html, body, #map-canvas {
+                height: 100%;
+                margin: 0px;
+                padding: 0px
+            }
+            #panel {
+                position: absolute;
+                top: 28px;
+                left: 90px;
+                z-index: 5;
+                background-color: #fff;
+                padding: 1px;
+                border: 1px solid #999;
+            }
+            #target {
+                width: 300px;
+            }
+        </style>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="facebook_setting.js"></script>
+        <script src="facebook_basic.js"></script>
+		<script src="checkinmap.js"></script>
+        <script>
+            
+        </script>
+    </head>
+    
+    <body>
+        <div id='fb-root'></div>
+        <button class="btn-fb">login</button>
+        <div id="panel">
+            <input id="target" type="text" size="50">
+        </div>
+        <div id="map-canvas" style="width: 100%; float:left"></div>
+        <div style="width:640px; float:left"></div>
+    </body>
+
+</html>
